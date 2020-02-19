@@ -1,0 +1,10 @@
+.logo {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 70px;
+}
+.header {
+    margin-bottom: 10px;
+    grid-area: h;
+    background-color: lightpink;
+}
