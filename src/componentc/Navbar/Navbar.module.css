@@ -3,14 +3,16 @@
     margin-top: 5px;
     font-size: 18px;
 }
+
+
+.nav .active {
+    color: gray;
+
+}
 .link {
     text-decoration: none;
     color: black;
     font-weight: bold;
-}
-
-.link:hover {
-    color: red;
 }
 
 .nav div:first-child {
@@ -20,4 +22,5 @@
     margin-right: 10px;
     grid-area: n;
     background-color: pink;
+
 }
