@@ -1,22 +1,15 @@
 import React from "react";
 import cl from "./Profile.module.css";
-import fon from "../../img/fon_profile.jpg";
 import MyPosts from "./MyPosts/MyPosts";
-import Post from "./Post/Post";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
 const Profile = (props) => {
+    console.log ('Пропсы в Profile');
+    console.log (props);
     return (
         <div className={cl.content}>
-            <div className={cl.bloc}>
-                <img src={fon} alt={"fon"}/>
-            </div>
-
-            <div>
-                ava + description
-            </div>
-
-            <MyPosts/>
-
+            <ProfileInfo />
+            <MyPosts posts={props.posts}/>
         </div>
     )
 };

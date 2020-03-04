@@ -1,8 +1,15 @@
 import React from 'react';
 import cl from './MyPosts.module.css';
-import Post from "../Post/Post";
+import Post from "./Post/Post";
+
+
 
 const MyPosts = (props) => {
+    console.log ('Пропсы в MyPosts');
+    console.log (props);
+
+    let postsElements = props.posts.map(p => <Post posts={p.post} likeOk={p.likeOk}/>);
+
     return (
         <div>
             My Posts
@@ -11,8 +18,8 @@ const MyPosts = (props) => {
                 <button>Add post</button>
             </div>
             <div>
-            <Post messages = 'Привет! Как ты?' likeok = '12'/>
-            <Post messages = 'Привет, у меня все круто!!! Как ты?' likeok = '15'/>
+                {postsElements}
+
             </div>
         </div>
     )

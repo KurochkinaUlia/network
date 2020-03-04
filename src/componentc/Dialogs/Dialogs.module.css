@@ -14,10 +14,7 @@
     border: solid 1px #000;
     margin-left: 10px;
 }
-.link {
-    text-decoration: none;
-    color: black;
-}
+
 .block .active {
     color: gray;
 }
